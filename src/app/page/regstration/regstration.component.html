@@ -1,0 +1,30 @@
+<div class="container">
+        <div class="text-center mt-5">       
+            
+            <form (ngSubmit)="submitForm()">
+                <p>
+                <mat-form-field appearance="outline" class="size">
+                    <mat-label>Enter Your Name</mat-label>
+                    <input matInput placeholder="Enter Your name" [(ngModel)]="user.name" name="name">
+                </mat-form-field>
+                </p>
+                <p>
+                <mat-form-field appearance="outline" class="size">
+                    <mat-label>Enter Your Email</mat-label>
+                    <input type="email" matInput placeholder="Enter Your Email" [(ngModel)]="user.email" name="email">
+                </mat-form-field>
+                </p>
+                <p>
+                <mat-form-field appearance="outline" class="size">
+                    <mat-label>Enter Your password</mat-label>
+                    <input type="password" matInput placeholder="Enter Your password" [(ngModel)]="user.password" name="password">
+                </mat-form-field>
+                </p>
+                
+                <button type="submit" mat-raised-button color="primary" class="size mb-2">Submit</button>
+                <br>
+                <button type="reset" mat-raised-button color="warn"  class="size mt-2">Reset</button>
+    
+            </form>         
+        </div>
+</div>
